@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+   
+    
+
+   
+</head>
+<body>
+    <img src="" alt="">
+    <!-- <h1>JOY UDOH</h1> -->
+    <section class="header">
+        <!-- <a href="about.html" img src="img\sq-lim-q1r9EZc-uCQ-unsplash.jpg"> -->
+        <nav>
+            <div class="navlink">
+                <ul>
+                    <li><a href="{% url 'home' %}">ABOUT</a></li>
+                    <li><a href="{% url 'resume' %}">RESUME</a></li>
+                    <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                </ul>
+        </nav>
+    </section>
+
+    <div class="container">
+        <div class = "item">
+            <h1>Contact</h1>
+            <h5>SAY HELLO</h5>
+        </div>
+
+        <div class = "item">
+            <h3>PERSONAL INFO</h3>
+            <h4> <i class="fas fa-map-marker-alt"></i> Drop On In</h4>
+            <p>Home Address: Nigerian Law School Abuja</p>
+            <p>School Address:Behind University of Uyo use offot Akwa ibom</p>
+        </div>
+        
+        <div class = "item">
+            <h4> <i class="fas fa-phone"></i> Give Me A Call</h4>
+            <ul>
+                <li>Mobile: 08117071564</li>
+                
+            </ul>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nulla dicta pariatur fugit ipsam id, quis minima voluptatum molestiae veniam quidem nisi modi suscipit ad! Id nam sint corrupti ut.</p> -->
+        </div>
+
+        <div class = "item">
+            <h4> <i class="fab fa-telegram-plane"></i> Let's Connect</h4>
+            <ul>
+                <li> <i class="far fa-envelope"></i> Email: idarajoy2001@gmail.com</li>
+                <li> <i class="fab fa-whatsapp"></i> Whatsapp: 08117071564</li>
+                <li> <i class="fab fa-facebook-f"></i> Facebook: Joy Udoh</li>
+               
+            </ul>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nulla dicta pariatur fugit ipsam id, quis minima voluptatum molestiae veniam quidem nisi modi suscipit ad! Id nam sint corrupti ut.</p> -->
+        </div>
+
+       
+        
+        </a>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required="fill">
+                </div> 
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required="fill">
+                    </div> 
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required="fill">
+                        </div> 
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="40" rows="10"required="fill" ></textarea>
+                            </div> 
+
+                            <button type="submit">SUBMIT FORM</button>
+                    </form>
+       
+        
+    </div>
+    
+   
+
+        
+       
+    <br>
+    <br>
+    <br>
+
+    <footer></footer>
+
+</body>
+</html>

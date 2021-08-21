@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+   
+</head>
+<body>
+    <img src="" alt="">
+    <!-- <h1>JOY UDOH</h1> -->
+    <section class="header">
+        <!-- <a href="about.html" img src="img\sq-lim-q1r9EZc-uCQ-unsplash.jpg"> -->
+        <nav>
+            <div class="navlink">
+                <ul>
+                    <li><a href="{% url 'home' %}">ABOUT</a></li>
+                    <li><a href="{% url 'resume' %}">RESUME</a></li>
+                    <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                </ul>
+        </nav>
+    </section>
+
+    <div class="container">
+        <div class ="item">
+            <h1>Joy Udoh</h1>
+            <h5>HNG INTERN/ COMPUTER SCIENCE STUDENT</h5>
+        </div>
+
+        <div class = "item">
+            <h3>ABOUT ME</h3>
+            <p>I am a computer science student and motivated backend intern who is ready to learn. I am currently in school and running the zuri intership. To know more about the internship <a href="https://internship.zuri.team/">"visit zuri internship"</a><img src="hng.logo.png"></p>
+        </div>
+        
+        <div class = "item">
+            <h3>PERSONAL INFO</h3>
+            <ul>
+                <li>Name: Joy Udoh</li>
+                <li>Date of Birth: 2001/11/26</li>
+                <li>Nationality: Nigerian</li>
+                <li>Marital Status: Single</li>
+                <li>Freelance: Available</li>
+               
+            </ul>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nulla dicta pariatur fugit ipsam id, quis minima voluptatum molestiae veniam quidem nisi modi suscipit ad! Id nam sint corrupti ut.</p> -->
+        </div>
+
+        <div class = "item">
+            <h3>CONTACT INFO</h3>
+            <ul>
+                <li>Email: idarajoy2001@gmail.com</li>
+                <li>Phone: 08117071564</li>
+                <li>Figma Email: idarajoy2001@gmail.com</li>
+                <li>Github link: https://github.com/Shugalp</li>
+                <li>Address: Nigerian Law School Abuja</li>
+                <li></li>
+                <li></li>
+            </ul>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nulla dicta pariatur fugit ipsam id, quis minima voluptatum molestiae veniam quidem nisi modi suscipit ad! Id nam sint corrupti ut.</p> -->
+        </div>
+    </div>
+
+    {% comment %} <a href="resume.html"></a> {% endcomment %}
+        
+    
+
+</body>
+</html>

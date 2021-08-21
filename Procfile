@@ -1,0 +1,1 @@
+web gunicorn stageTwo.wsgi:application --log-file -
